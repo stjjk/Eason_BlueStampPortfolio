@@ -1,12 +1,6 @@
 # Automated Cat Laser
 To help my cats lose some weight and have something to do while I'm away from home, I decided to do the Automated Cat Laser. The project mainly consists of two servo motors that control two different axes, moving a laser module to point in diffeerent directions. 
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
-```HTML 
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
-
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Eason Z | Challenger | Mechanical Engineering | Incoming 8th
