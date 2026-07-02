@@ -55,23 +55,6 @@ For your first milestone, describe what your project is and how you plan to buil
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```c++
-  Laser Tower for the CAT - LA FABRIQUE DIY And modded (changed LED to PWM pin to make it less bright)
-  Pseudo-randomly moves a servo tower (on X and Y axis) and lights up a laser.
-  x_servo is attached to pin 6 and moves in the X plan 
-  y_servo is attached to pin 9 and moves in the Y plan 
-  Laser is on pin 3
-  HOW IT WORKS : 
-  The program randomly choose a new position for the laser inside a square you can define below. 
-  It checks the new position is different from the old one of at least "minimal_movement".
-  It moves the tower to the new position and stays still for a time between min_freeze and max_freeze 
-  (this aims to reproduce the behaviour of an insect landing somewhere for a bit and then flying off, 
-  that's the variable you need to increase if your cat is fat).
-  Ans starts the process over and over again. 
-  
-  Created 30 Sep 2016 by Lucas Berbesson
-*/
-
-
 #include <Servo.h>
 
 /* YOU CAN CUSTOM THESE VARIABLES IF YOU WANT TO ALTER THE TOWER BEHAVIOUR */
