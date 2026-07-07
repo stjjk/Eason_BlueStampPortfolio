@@ -48,7 +48,8 @@ For your first milestone, describe what your project is and how you plan to buil
 - What your plan is to complete your project
 
 # Schematics 
-<img width="1305" height="664" alt="Screen Shot 2026-07-02 at 2 04 40 PM" src="https://github.com/user-attachments/assets/f87befb4-6792-4ab6-ac02-9fe665009794" />
+<img width="1324" height="650" alt="Screen Shot 2026-07-07 at 2 42 41 PM" src="https://github.com/user-attachments/assets/529e5d44-1ff7-42d3-9980-d79e9f7b7438" />
+
 
 
 # Code
@@ -136,7 +137,8 @@ void loop() {
 
 }
 
-```
+```<img width="1324" height="650" alt="Screen Shot 2026-07-07 at 2 42 41 PM" src="https://github.com/user-attachments/assets/e926a608-1070-4c62-b014-074c35472a58" />
+
 
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
