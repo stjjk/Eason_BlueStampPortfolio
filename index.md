@@ -45,6 +45,10 @@ For your second milestone, explain what you've worked on since your previous mil
 
 For my first milestone, I built the arm that will move the laser in two dimensions. I first designed mounts for both servos that would secure them either to a breadboard or a servo horn. Then, I assembled the arm with the mounts and attached the laser with screws to the servo horn. Finally, I attached the servos to the breadboard with male to male wires and attached a power supply module with male to male wires to supply power from a USB charger adapter. One of the most important things I had to do in Milestone 1 was making sure a screw would fit in the screw hole I designed in the 3d print but also be short enough to secure the servo. Also, I had to get the dimensions correct for the second mount. After failing with multiple models that were too long or the wrong part, I sanded down the hole to fit the servo horn.
 
+# Challenges
+
+One challenge I faced was when designing the mounts for the servos. The bottom mount neeeded a hole in the side for the servo's wires to fit through. There was 
+
 My project is an automated cat laser
 I have assembled the arm with mounts for both servos and attached the laser via screw to the servo horn
 Challenges include: power not enough to power both servos
