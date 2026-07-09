@@ -147,6 +147,9 @@ void loop() {
 }
 
 ```
+
+# Schematic
+
 <img width="1324" height="650" alt="Screen Shot 2026-07-07 at 2 42 41 PM" src="https://github.com/user-attachments/assets/e926a608-1070-4c62-b014-074c35472a58" />
 
 
