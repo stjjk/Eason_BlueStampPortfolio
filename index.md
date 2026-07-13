@@ -61,7 +61,7 @@ For your first milestone, describe what your project is and how you plan to buil
 - What your plan is to complete your project
 
 # Schematics 
-<img width="50%" height="50%" alt="Screen Shot 2026-07-07 at 2 42 41 PM" src="https://github.com/user-attachments/assets/529e5d44-1ff7-42d3-9980-d79e9f7b7438"/>
+<img width="100%" height="50%" style = "display: block; margin: 0 auto;" alt="Screen Shot 2026-07-07 at 2 42 41 PM" src="https://github.com/user-attachments/assets/529e5d44-1ff7-42d3-9980-d79e9f7b7438"/>
 
 
 
