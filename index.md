@@ -29,11 +29,21 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
+# Description
+
+For my second milestone, I focused on programming the laser toy and getting the electronics working together. I uploaded code from an online DIY laser toy project to an Arduino Nano and used it as the foundation for my project. The code controls two servo motors that move the laser in both the X and Y axes. Instead of moving in a predictable pattern, the laser pauses briefly in one location before moving to another point. This creates random, bug-like movements that are designed to stimulate a cat's hunting instincts and encourage it to chase the laser.
+
+This milestone also involved connecting the Arduino to the two servos and making sure they responded correctly to the program. I tested the movement several times and adjusted the wiring and power supply so the servos could move smoothly without resetting the Arduino. By the end of this milestone, I had a working system that could control the laser's movement in two dimensions.
+
+One thing that surprised me during this project was how much time 3D printing takes, especially when parts need to be redesigned and reprinted after testing. Even small design changes can require several hours of printing. I also learned that there are important differences between genuine Arduino boards and clone Arduino boards. Although they perform the same basic functions, the clone Arduino required additional drivers before I could upload code, which was something I had not expected.
+
+# Challenges
+
+One of the biggest challenges I faced was uploading the code to the Arduino Nano. Since I was using a clone Arduino instead of an official Arduino board, my computer could not recognize it at first. After researching the problem, I discovered that I needed to install the correct driver for the USB-to-serial chip on the board. Once the driver was installed, I was able to successfully upload the program.
+
+Another challenge was supplying enough power for the servos. The Arduino could not provide enough current on its own, so I added a separate power module. Unfortunately, the power module malfunctioned, preventing the servos from operating correctly. I first attempted to remove it by desoldering it from the board, but my solder joints were difficult to remove and the repair was unsuccessful. I then tried cutting away part of the board to replace the damaged section, but halfway through I decided it would be easier to transfer the components to another board instead.
+
+After soldering the Arduino onto the new board, I realized I had accidentally soldered it onto the wrong side, making it difficult to complete the wiring. Rather than starting over again, I went back to the original board, which still functioned even though it had been partially cut. I finished the wiring on that board and soldered a 9V battery connection so the project could operate without being plugged into a computer. Although these setbacks took extra time, they helped me improve my soldering skills and taught me how to troubleshoot hardware problems more effectively.
 
 # First Milestone
 
