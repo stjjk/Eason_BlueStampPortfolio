@@ -1,5 +1,6 @@
 # Automated Cat Laser
-To help my cats lose some weight and have something to do while I'm away from home, I decided to do the Automated Cat Laser. The project mainly consists of two servo motors that control two different axes, moving a laser module to point in diffeerent directions. 
+To help my cats stay active, lose weight, and remain mentally stimulated while I am away from home, I designed and built an **Automated Cat Laser**. The system consists of a two-degree-of-freedom pan-and-tilt mechanism driven by two SG90 servo motors, allowing a laser module to rotate independently along the X and Y axes. An Arduino Nano controls the servos by generating PWM (Pulse Width Modulation) signals, causing the laser to move through a series of randomized positions and timed pauses that simulate the unpredictable movement of prey. The mechanical assembly was designed in CAD and fabricated using 3D-printed components that securely mount the servos and laser while maintaining proper alignment. By integrating mechanical design, embedded programming, electronics, and additive manufacturing, the project creates an autonomous laser system that encourages exercise and provides environmental enrichment for indoor cats.
+
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -96,7 +97,6 @@ this is my schematic for my project
 
 
 <img width="100%" height="50%" style = "display: block; margin: 0 auto;" alt="<img width="1300" height="668" alt="Screen Shot 2026-07-16 at 6 07 28 PM" src="https://github.com/user-attachments/assets/ad3ee41e-f111-4976-8eee-59be2ddbfe92" />
-"/>
 
 
 
