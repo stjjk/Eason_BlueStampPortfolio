@@ -96,7 +96,10 @@ During testing, I also discovered that powering the servos directly was insuffic
 this is my schematic for my project
 
 
-<img width="100%" height="50%" style = "display: block; margin: 0 auto;" alt="<img width="1300" height="668" alt="Screen Shot 2026-07-16 at 6 07 28 PM" src="https://github.com/user-attachments/assets/ad3ee41e-f111-4976-8eee-59be2ddbfe92" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ad3ee41e-f111-4976-8eee-59be2ddbfe92" alt="Grid Measurement Screen Shot" width="80%">
+</p>
+
 
 
 
