@@ -93,7 +93,9 @@ During testing, I also discovered that powering the servos directly was insuffic
 
 # Schematic
 
-this is my schematic for my project
+This schematic illustrates the wiring for my project. The **orange wires** are the signal wires and connect to the Arduino's digital output pins, which generate the PWM signals used to control the servo motors. The **red wires** are connected to the positive power rail (+), while the **black wires** are connected to the ground rail (-).
+
+The **9V battery** is represented by the box labeled **"9V"** and provides power to the circuit. The **Arduino**, shown as the long blue rectangle labeled **"Arduino,"** serves as the microcontroller that controls the system. The **two blue rectangles with white crosses on top** represent the servo motors, which rotate along the X and Y axes to position the laser.
 
 
 <p align="center">
