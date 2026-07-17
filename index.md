@@ -15,13 +15,37 @@ To help my cats lose some weight and have something to do while I'm away from ho
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+# Description
 
+For my third and final milestone, I focused on refining the project by improving its appearance, durability, and overall functionality. Rather than adding completely new features, I concentrated on redesigning existing components to create a more reliable and polished final product.
 
+One of my main improvements was designing and 3D printing a protective enclosure for the electronics. I created a custom case that housed the Arduino Nano, power circuitry, and wiring, protecting the components from accidental damage while also making the project easier to transport. While designing the enclosure in CAD, I had to consider the dimensions of every component, including the Arduino, power connections, jumper wires, and battery leads. I also designed openings for the USB port, power cable, and wiring so the system could still be programmed and powered without removing it from the enclosure. Multiple test prints were required to adjust the tolerances so every component fit securely without excessive force.
+
+I also designed and printed a dedicated case for the laser module. Instead of leaving the laser exposed, the enclosure held it firmly in place while keeping it aligned with the servo horn. This reduced unwanted movement and made the laser more stable as the servos changed position. The housing also protected the laser from being bumped or knocked out of alignment during operation.
+
+Another major improvement was redesigning the second servo mount. Earlier versions fit the servo horn loosely and required sanding before they could be assembled. For the final version, I completely remodeled the mount using more accurate measurements of the servo horn and spline dimensions. I adjusted the clearances and wall thickness to improve the strength of the printed part while maintaining a tight fit. I also reinforced the mounting platform with additional material around the high-stress areas to reduce flexing as the servo accelerated and changed direction. As a finishing touch, I incorporated a custom logo directly into the CAD model, giving the mount a more professional appearance while demonstrating more advanced CAD techniques. The final design fit much more precisely than previous versions and required significantly less post-processing before assembly.
+
+After assembling all of the redesigned parts, I tested the complete system to ensure the laser moved smoothly in both the X and Y axes while the electronics remained securely mounted inside their enclosures. These improvements made the final project much cleaner, sturdier, and more reliable than the earlier prototypes.
+
+# Challenges
+
+The biggest challenge during this milestone was the amount of redesigning and reprinting required before the parts fit correctly. Even small measurement errors in the CAD model could prevent components from fitting together, especially around the servo gears and mounting holes. Because 3D printers also have slight dimensional inaccuracies, I often had to adjust tolerances by only a few tenths of a millimeter before printing another prototype.
+
+Several versions of the servo cases did not fit properly onto the servo gear because the center opening was either too tight or slightly misaligned. Each failed print required measuring the part, modifying the CAD model, and printing another revision. This iterative design process took a significant amount of time, but it allowed me to better understand manufacturing tolerances and the importance of designing for real-world assembly rather than relying only on CAD dimensions.
+
+Although repeatedly redesigning parts was frustrating, each iteration improved the quality of the final product and helped me develop a more efficient design process.
+
+# What I Learned at BlueStamp Engineering
+
+During my time at BlueStamp Engineering, I learned much more than simply how to build a working project. I developed practical engineering skills by repeatedly designing, building, testing, troubleshooting, and improving my work.
+
+The biggest challenges I overcame were uploading code to a clone Arduino Nano, redesigning and reprinting 3D models until they fit correctly, and learning proper soldering techniques. Each of these required patience and careful troubleshooting. I learned that engineering projects rarely work perfectly on the first attempt, and that solving problems is an essential part of the design process.
+
+My biggest accomplishments were successfully assembling all of the custom 3D-printed parts into a functional mechanism, getting the Arduino code working correctly with both servos, and producing clean, reliable solder joints. Through practice, I learned how to heat both the pad and the component lead evenly so the solder flowed correctly, creating strong electrical and mechanical connections instead of cold solder joints. Seeing the completed system operate smoothly after solving so many problems was one of the most rewarding parts of the project.
+
+Throughout the program, I gained experience with a wide variety of technical skills, including CAD design, 3D printing, soldering and desoldering, drilling, sanding, hot gluing, electrical wiring, and programming in C++. I also learned how to measure components accurately, account for manufacturing tolerances, and improve designs through repeated testing and iteration.
+
+In the future, I would like to continue developing my CAD skills so I can design more detailed and mechanically complex parts. I also want to expand my programming knowledge in C++, learn how to use Raspberry Pi computers for more advanced projects, and become familiar with additional engineering tools and manufacturing techniques. Overall, this project gave me a much stronger understanding of the engineering design process and increased my confidence in tackling challenging technical problems independently.
 
 # Second Milestone
 
