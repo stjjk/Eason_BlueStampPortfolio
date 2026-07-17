@@ -77,25 +77,26 @@ After soldering the Arduino onto the new board, I realized I had accidentally so
 
 # Description
 
-For my first milestone, I built the arm that will move the laser in two dimensions. I first designed mounts for both servos that would secure them either to a breadboard or a servo horn. Then, I assembled the arm with the mounts and attached the laser with screws to the servo horn. Finally, I attached the servos to the breadboard with male to male wires and attached a power supply module with male to male wires to supply power from a USB charger adapter. One of the most important things I had to do in Milestone 1 was making sure a screw would fit in the screw hole I designed in the 3d print but also be short enough to secure the servo. Also, I had to get the dimensions correct for the second mount. After failing with multiple models that were too long or the wrong part, I sanded down the hole to fit the servo horn.
+For my first milestone, I built the arm that moves the laser in two dimensions. I started by designing custom mounts for both servos that securely attached either to a breadboard or to a servo horn. After printing the mounts, I assembled the arm and attached the laser to the servo horn using screws. Finally, I connected the servos to the breadboard with male-to-male jumper wires and added a 5V power supply module powered by a USB charger adapter.
+
+One of the most important parts of this milestone was designing the screw holes with the correct dimensions. The screws needed to fit securely while remaining short enough not to interfere with the servo. I also had to carefully measure the dimensions of the second servo mount. After several failed prints that were either too large, too long, or designed for the wrong servo horn, I modified the mount by sanding the opening until it fit properly.
 
 # Challenges
 
-One challenge I faced was when designing the mounts for the servos. The bottom mount neeeded a hole in the side for the servo's wires to fit through. There was 
+One challenge I faced was designing the servo mounts. The bottom mount needed an opening for the servo wires to pass through, but the hole was too small. I initially cut and stripped the wires to make them fit, but after soldering them back together, the connection was unreliable, causing the servo to move inconsistently. To solve this problem, I redesigned and reprinted the mount with greater tolerance and more space for the wires.
 
-My project is an automated cat laser
-I have assembled the arm with mounts for both servos and attached the laser via screw to the servo horn
-Challenges include: power not enough to power both servos
-Plan: Finish uploading code to the laser
+Another challenge was mounting the second servo onto the first servo's horn. My initial design placed a platform above the servo horn, but I accidentally used the wrong servo horn model, so the parts did not fit together and had to be reprinted. I then redesigned the mount so the servo horn fit into a recessed pocket, making the structure stronger. Although the new design was much closer, it still required sanding before it fit correctly.
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
+During testing, I also discovered that powering the servos directly was insufficient, so I added a dedicated 5V power module. This required rewiring the circuit to provide enough current for both servos. Finally, I realized that my original ES08MA servo used a different gear and horn pattern than expected, making it incompatible with my design. I replaced it with an SG90 servo, which fit the printed parts correctly.
 
-# Schematics 
-<img width="100%" height="50%" style = "display: block; margin: 0 auto;" alt="Screen Shot 2026-07-07 at 2 42 41 PM" src="https://github.com/user-attachments/assets/529e5d44-1ff7-42d3-9980-d79e9f7b7438"/>
+
+# Schematic
+
+this is my schematic for my project
+
+
+<img width="100%" height="50%" style = "display: block; margin: 0 auto;" alt="<img width="1300" height="668" alt="Screen Shot 2026-07-16 at 6 07 28 PM" src="https://github.com/user-attachments/assets/ad3ee41e-f111-4976-8eee-59be2ddbfe92" />
+"/>
 
 
 
