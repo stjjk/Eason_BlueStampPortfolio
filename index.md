@@ -76,7 +76,6 @@ After soldering the Arduino onto the new board, I realized I had accidentally so
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-# First Milestone
 ## Description
 For my first milestone, I designed and built the mechanical structure that allows the laser to move in two degrees of freedom. The system uses two SG90 micro servo motors arranged in a pan-and-tilt configuration, allowing one servo to rotate the laser horizontally (X-axis) while the second servo, mounted on top of the first, rotates it vertically (Y-axis). This mechanism forms the foundation of the entire project because every later improvement depends on the laser being able to move smoothly and accurately.
 The first step of this milestone was designing custom servo mounts using CAD software. Since commercially available brackets did not fit my design requirements, I created my own parts that would securely hold the servos while allowing them to rotate freely without interference. I designed one mount that attached directly to the base and another that connected the second servo to the horn of the first servo. Because the SG90 servo horn has a unique spline pattern and dimensions, I had to carefully measure its diameter, thickness, and mounting holes so the printed parts would fit correctly.
