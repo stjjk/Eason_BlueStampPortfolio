@@ -4,7 +4,7 @@ To help my cats stay active, lose weight, and remain mentally stimulated while I
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Eason Z | Challenger | Mechanical Engineering | Incoming 8th
+| Eason Z | Challenger Almaden | Mechanical Engineering | Incoming 8th Grader |
 
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
@@ -76,19 +76,37 @@ After soldering the Arduino onto the new board, I realized I had accidentally so
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-# Description
-
-For my first milestone, I built the arm that moves the laser in two dimensions. I started by designing custom mounts for both servos that securely attached either to a breadboard or to a servo horn. After printing the mounts, I assembled the arm and attached the laser to the servo horn using screws. Finally, I connected the servos to the breadboard with male-to-male jumper wires and added a 5V power supply module powered by a USB charger adapter.
-
-One of the most important parts of this milestone was designing the screw holes with the correct dimensions. The screws needed to fit securely while remaining short enough not to interfere with the servo. I also had to carefully measure the dimensions of the second servo mount. After several failed prints that were either too large, too long, or designed for the wrong servo horn, I modified the mount by sanding the opening until it fit properly.
-
+### First Milestone
+## Description
+For my first milestone, I designed and built the mechanical structure that allows the laser to move in two degrees of freedom. The system uses two SG90 micro servo motors arranged in a pan-and-tilt configuration, allowing one servo to rotate the laser horizontally (X-axis) while the second servo, mounted on top of the first, rotates it vertically (Y-axis). This mechanism forms the foundation of the entire project because every later improvement depends on the laser being able to move smoothly and accurately.
+The first step of this milestone was designing custom servo mounts using CAD software. Since commercially available brackets did not fit my design requirements, I created my own parts that would securely hold the servos while allowing them to rotate freely without interference. I designed one mount that attached directly to the base and another that connected the second servo to the horn of the first servo. Because the SG90 servo horn has a unique spline pattern and dimensions, I had to carefully measure its diameter, thickness, and mounting holes so the printed parts would fit correctly.
+After completing the CAD models, I exported them as STL files and printed them on a 3D printer. Once the parts were finished printing, I assembled the mechanism by mounting the bottom servo to the base and attaching the second servo to the rotating horn of the first servo. This allowed the second servo to rotate together with the first, creating independent motion in both the horizontal and vertical directions.
+The next step was attaching the laser module. Rather than gluing it directly onto the servo, I designed a mounting platform that allowed the laser to be secured using screws. This created a much stronger attachment while also making it easier to replace or adjust the laser if necessary. I carefully aligned the laser so that its beam remained centered as the servos rotated through their range of motion.
+After assembling the mechanical system, I connected both servos to a solderable breadboard using male-to-male jumper wires. The Arduino Nano generated PWM (Pulse Width Modulation) signals that controlled each servo's angular position. Because two servos require more current than the Arduino can safely supply, I added an external 5V power module powered by a USB wall adapter. The Arduino still generated the control signals, while the external supply provided enough current for both servos to operate smoothly.
+By the end of this milestone, I had successfully built a complete two-axis pan-and-tilt mechanism capable of moving the laser throughout a wide area. Although the laser was not yet moving automatically, the mechanical platform was complete and ready for programming during the next milestone.
+## How It Works
+# SG90 Servo Motors
+The primary components of this milestone are the two SG90 micro servo motors. Unlike ordinary DC motors, servo motors rotate to a specific angle instead of spinning continuously. Each servo contains a DC motor, a gear reduction system, a position sensor (potentiometer), and an internal control circuit. The Arduino controls the servo by sending Pulse Width Modulation (PWM) signals, where the width of each pulse determines the desired angle.
+Whenever the Arduino changes the PWM signal, the servo compares its current position to the commanded position using its internal potentiometer. If the positions do not match, the internal motor rotates until the error becomes zero. This closed-loop feedback system allows the servo to move accurately and hold its position even when supporting the weight of another servo or the laser module.
+By mounting one servo on top of another, the system gains two independent axes of rotation. The lower servo controls left and right movement, while the upper servo controls up and down movement. Together, these allow the laser to point almost anywhere within the operating range.
+# Laser Module
+The project uses a KY-008 laser module to project a visible red laser beam. The module contains a semiconductor laser diode that emits coherent light when electrical current passes through it. Since the laser itself remains fixed to the second servo, every movement of the servo directly changes the direction of the laser beam.
+Unlike a traditional laser pointer operated by hand, this system automatically changes the laser's position using software, allowing it to simulate the unpredictable movement of small animals or insects. These random movements encourage cats to chase the laser, providing both physical exercise and mental stimulation.
 # Challenges
-
-One challenge I faced was designing the servo mounts. The bottom mount needed an opening for the servo wires to pass through, but the hole was too small. I initially cut and stripped the wires to make them fit, but after soldering them back together, the connection was unreliable, causing the servo to move inconsistently. To solve this problem, I redesigned and reprinted the mount with greater tolerance and more space for the wires.
-
-Another challenge was mounting the second servo onto the first servo's horn. My initial design placed a platform above the servo horn, but I accidentally used the wrong servo horn model, so the parts did not fit together and had to be reprinted. I then redesigned the mount so the servo horn fit into a recessed pocket, making the structure stronger. Although the new design was much closer, it still required sanding before it fit correctly.
-
-During testing, I also discovered that powering the servos directly was insufficient, so I added a dedicated 5V power module. This required rewiring the circuit to provide enough current for both servos. Finally, I realized that my original ES08MA servo used a different gear and horn pattern than expected, making it incompatible with my design. I replaced it with an SG90 servo, which fit the printed parts correctly.
+# Designing Accurate Servo Mounts
+One of the first challenges I encountered was designing the servo mounts with the proper dimensions. Although CAD software allows extremely precise measurements, the printed parts often differed slightly from the digital model because of manufacturing tolerances in the 3D printer. Even an error of less than one millimeter could prevent the servo from fitting correctly.
+The first version of my lower servo mount included an opening for the servo wires, but the hole was too small. Rather than redesigning it immediately, I attempted to cut the servo wires, thread them through the opening, and solder them back together afterward. Although this initially solved the problem, the repaired wires became unreliable and occasionally caused the servo to stop working correctly. I ultimately redesigned the mount with a much larger opening and reprinted the part, eliminating the need to modify the wires.
+# Mounting the Second Servo
+Attaching the second servo to the horn of the first servo proved to be much more difficult than expected. My original design placed the servo on a flat platform above the horn, but I accidentally modeled the mount using measurements from a different servo horn. As a result, the parts could not be assembled.
+Rather than forcing the pieces together, I redesigned the mount so that the servo horn fit into a recessed pocket instead of sitting underneath a flat platform. This increased the contact area between the parts, making the assembly both stronger and easier to align. Even after redesigning it, the fit was still slightly too tight, so I carefully sanded the printed part until it rotated freely while remaining securely attached.
+# Providing Enough Power
+Another challenge appeared when testing the servos. Initially, I attempted to power everything directly from the Arduino Nano. Although the Arduino could control the servos, it could not provide enough current for both motors to move at the same time. Whenever both servos accelerated together, they behaved inconsistently and occasionally stalled.
+To solve this problem, I added a dedicated 5V power module powered by a USB charger. The Arduino continued generating the PWM control signals, while the external supply delivered sufficient current for both servos. This greatly improved the reliability of the system and allowed smooth movement across both axes.
+# Servo Compatibility
+Toward the end of the milestone, I discovered that one of my original servos, an ES08MA, used a different spline pattern and horn geometry than the SG90 servos I had designed around. Because the mounting hole and gear pattern were different, the printed parts were incompatible.
+Instead of redesigning every component, I replaced the ES08MA with another SG90 servo. This ensured that both servos used identical mounting hardware and allowed the printed parts to fit exactly as intended.
+## Next Step
+For the next milestone, I will begin programming the Arduino Nano to control both servos automatically. Instead of manually positioning the laser, I will upload code that generates randomized movements and timed pauses, allowing the laser to imitate the unpredictable behavior of prey. I will also complete the electrical wiring, troubleshoot the Arduino Nano, and test the entire system as an integrated autonomous cat toy.
 
 
 # Schematic
@@ -120,7 +138,7 @@ Here's where you'll put your code. The syntax below places it into a block of co
 float min_x = 5;
 float max_x = 50;
 float min_y = 5;
-float max_y = 35;
+float max_y = 50;
 int min_freeze = 600;
 int max_freeze = 3000;
 float minimal_movement = 5;
@@ -189,6 +207,8 @@ void loop() {
   delay(random_delay);
 
 }
+
+
 
 ```
 
